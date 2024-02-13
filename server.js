@@ -25,7 +25,7 @@ const hbs = exphbs.create({ helpers,
 });
 
 
-
+console.log('SESSION_SECRET:', process.env.SESSION_SECRET);
 const sess = {
   secret: process.env.SESSION_SECRET || 'secret',// Reference to the SESSION_SECRET value is in the .env file
   cookie: {
